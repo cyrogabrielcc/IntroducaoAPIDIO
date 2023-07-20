@@ -13,11 +13,11 @@ namespace TrabalhandoComEF.Controllers
         [HttpGet("horadata")]
         public IActionResult GetDateHour()
         {
-            var obj = new {
+            var objDataHora = new {
                 Data = DateTime.Now.ToLongDateString(),
                 Hora = DateTime.Now.ToShortTimeString()
             };
-            return Ok(obj);
+            return Ok(objDataHora);
         }
     }
 }
