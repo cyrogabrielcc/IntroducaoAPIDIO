@@ -19,5 +19,13 @@ namespace TrabalhandoComEF.Controllers
             };
             return Ok(objDataHora);
         }
+
+
+        [HttpGet("Apresentar")]
+        public IActionResult Apresentar(string nome)
+        {
+            var message = $"Fala {nome}! ";
+            return Ok(message);  
+        }
     }
 }
